@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efee37ba-b00e-4887-8123-78011d777044" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/font.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tap/abc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/New Microsoft Word Document.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Thiết kế Kanban cá nhân cho bạn bang trello.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Xây dựng Định nghĩa Hoàn thành cho bạn để nâng cao chất lượng.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Điều tra nguyên nhân với 5WHYs.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Đặt mục tiêu cho công việc của bạn.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Đặt mục tiêu tốt theo SMART.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập] Ưu tiên hóa công việc để đạt hiệu quả cao nhất.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nhạp mon LT căn bản/Bai_Tạp Kaban/[Bài tập]Thực hiện cải tiến cá nhânPNG.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../source/news.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bR3DmxH0sZ1Ovr2U8eD0BQ2q21" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BT_font" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efee37ba-b00e-4887-8123-78011d777044" name="Default Changelist" comment="" />
+      <created>1588580961774</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588580961774</updated>
+      <workItem from="1588580963267" duration="802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="140" key="FileChooserDialogImpl" timestamp="1588581767698">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="432" y="140" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1588581767698" />
+  </component>
+</project>
