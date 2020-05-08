@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>money</title>
 </head>
 <body>
-$END$
+<form method="post" action="convertMoney.html">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input id="amount" name="amount" type="number"></input>
+            </td>
+            <td>
+                <select id="from" name="from">
+                    <option>VietNam</option>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="to" name="to">
+                    <option>USD</option>
+                    <option>VietNam</option>
+                </select>
+            </td>
+            <td>
+                <button name="convert" type="button" onclick="myFunction()">Convert</button>
+            </td>
+        </tr>
+
+    </table>
+<script>
+    function myFunction()
+    {
+    let convert;
+    let amount = document.getElementById("amount").value;
+    let from = document.getElementById("from").value;
+    let to = document.getElementById("to").value;
+    amount = parseInt(amount);
+        if (from=="VietNam")
+        {
+            if (to=="USD")
+                convert = (amount/23000);
+        }
+        if (from=="USD");
+        {
+            if(to== "VietNam");
+        }
+        alert("result : " + convert)
+
+    }
+
+</script>
+
+</form>
 </body>
 </html>

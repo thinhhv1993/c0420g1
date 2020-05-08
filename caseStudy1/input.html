@@ -2,9 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>input</title>
+    <style>
+        .g-grid {
+            display: grid;
+            /* W(adjusted) = W(individual) - (1rem * 1/2) */
+            grid-template-columns: calc(50% - (30px * 1/2)) calc(50% - (30px * 1/2));
+            grid-column-gap: 30px;
+        }
+    </style>
 </head>
-<body>
-$END$
+<body style="background-color: antiquewhite">
+<form action="input.html" method="post">
+    <table style="background-color: wheat; " width="50%" align="center"  cellpadding="10" >
+        <h1 align="center" style="color: blue">NGƯỜI DÙNG</h1><br>
+        <tr>
+            <th width="50%">TIÊU ĐỀ</th>
+            <th>NỘI DUNG</th>
+        </tr>
+        <tr>
+            <td>Họ và tên :</td>
+            <td >
+                <input id="name" name="yourname" tyle="text" style="width: 100%;" >
+            </td>
+        </tr>
+        <tr>
+            <td>CMND :</td>
+            <td>
+                <input id="id" name="id" type="number" style="width: 100%">
+            </td>
+        </tr>
+        <tr>
+            <td>Ngày Tháng Năm Sinh :</td>
+            <td>
+                <input id="yearold" name="yearold" type="date" style="width: 100%">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input id="email" name="email" type="email" style="width: 100%">
+            </td>
+        </tr>
+        <tr>
+            <td>Địa Chỉ</td>
+            <td>
+                <input id="address" name="address" type="text" style="width: 100%">
+            </td>
+        </tr>
+        <tr>
+            <td>Customer</td>
+            <td>
+                <select id="customer" name="customer">
+                    <option value="Diamond">Diamond</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Member">Member</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Giảm giá</td>
+            <td>
+                <select id="sell" name="sell">
+                    <option value="5%">5%</option>
+                    <option value="10%">10%</option>
+                    <option value="15%">15%</option>
+                    <option value="20%">20%</option>
+                    <option value="25%">25%</option>
+                    <option value="30%">30%</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số lượng đi kèm</td>
+            <td>
+                <select id="number" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số ngày thuê</td>
+            <td>
+                <input id="rentdays" name="rentdays" type="number"> Ngày
+            </td>
+        </tr>
+        <tr>
+            <td>Loại Dịch Vụ</td>
+            <td>
+                <input id="villa" name="service" type="radio" value="Villa">-	Villa 500$/ 1 ngày<br>
+                <input id="House" name="service" type="radio" value="House">-	House 300$/1 ngày<br>
+                <input id="Room" name="service" type="radio" value="Room">-	House 100$/1 ngày<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Loại Phòng Thuê</td>
+            <td>
+                <input id="Vip" name="service1" type="radio" value="Vip">Vip
+                <input id="Business" name="service1" type="radio" value="Business">Business
+                <input id="Normal" name="service1" type="radio" value="Normal">Normal
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input name="submid" type="submit" value="bookroom" onclick="output()" style="width: 20%; height: 50px; font-size: 20px" >
+                <input name="reset" type="reset" value="reset" style="width: 20%; height: 50px; font-size: 20px">
+
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="output.js"></script>
 </body>
 </html>

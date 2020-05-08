@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>computer</title>
 </head>
 <body>
-$END$
+<form method="post" action="appcomputer.html">
+    <h1>Caculator</h1>
+    <input id="number1" type="text">
+    <input id="number2" type="text"><br>
+    <button name="add" type="button" value="add" onclick="calculater('+')">Adddition(+)</button>
+    <button name="sub" type="button" onclick="calculater('-')">Subtraction(-)</button>
+    <button name="multi" type="button" onclick="calculater('*')">Multiplication(x)</button>
+    <button name="div" type="button" onclick="calculater('/')">Division(/)</button>
+</form>
+    Kết quả phép tính = <label id="ketqua"></label>
+<script>
+    function calculater(tinh)
+    {
+        let one = document.getElementById("number1").value;
+        let tow = document.getElementById("number2").value;
+        one = parseFloat(one);
+        tow = parseFloat(tow);
+        let add;
+        if (tinh == '+')
+        {
+             add = one + tow;
+        document.getElementById('ketqua').innerHTML =add;
+        }else if (tinh == '-')
+        {
+             add = one - tow;
+        document.getElementById('ketqua').innerHTML =add;
+        }else if (tinh == '*')
+        {
+             add = one * tow;
+        document.getElementById('ketqua').innerHTML =add;
+        } if (tinh == '/')
+        {
+             add = one / tow;
+        document.getElementById('ketqua').innerHTML =add;
+        }
+
+    }
+</script>
 </body>
 </html>
