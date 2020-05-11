@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Document</title>
 </head>
 <body>
-$END$
+<script>
+    let name;
+    let cmnd;
+    let birthday;
+    let email;
+    let address;
+    let typeService
+    let typeRoom;
+    let typeCustomer;
+    let discount;
+    let quantityIncluded;
+    let rendDays;
+    let totalPay;
+
+    name = prompt("Input Name :");
+    cmnd = prompt("Input Cmnd : ");
+    birthday = prompt("Input Birtyday :");
+    email = prompt("Input Email : ");
+    address = prompt("Input Address :");
+    typeService = prompt("Input TypeService: ");
+    typeRoom = prompt("Input TypeRoom :");
+    typeCustomer = prompt("Input TypeCustomer: ");
+    discount = prompt("Input Discount: ");
+    quantityIncluded = prompt("Input QuantityIncluded :");
+    rendDays = prompt("Inpup RendDays :");
+    totalPay = 300*rendDays*(1 - discount/100);
+
+        confirm("name :" +name+"\n"+"cmnd :" +cmnd
+        +"\n"+ "Birthday :" +birthday+
+            "\n"+ "Email :" +email+
+            "\n"+ "Address :" +address+
+            "\n"+"TypeService :" +typeService+
+            "\n"+ "TypeRoom :" +typeRoom+
+            "\n"+ "TypeCustomer :" +typeCustomer+
+            "\n"+ "Discount :" +discount+
+            "\n"+ "QuantityIncluded :" +quantityIncluded+
+            "\n"+ "RendDays :" +rendDays+
+            "\n"+ "TotalPay :" +totalPay);
+</script>
 </body>
 </html>
