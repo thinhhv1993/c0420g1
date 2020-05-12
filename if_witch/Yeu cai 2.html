@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthday ;
+    let email;
+    let address;
+    let typeService ;
+    let typeRoom  ;
+    let typeCustomer ;
+    let discount;
+    let quantityIncluded;
+    let rendDays;
+    let totalPay;
+    let choose1;
+
+    name = prompt("Input Name :");
+    cmnd = prompt("Input Cmnd : ");
+    birthday = prompt('Ngày sinh (mm/dd/yyyy):');
+    email = prompt("Input Email : ");
+    address = prompt("Input Address :");
+    typeService =  prompt("Bảng giá: "+
+        "\n - Villa: 500$/1 ngày "+
+        "\n - House: 300$/1 ngày"+
+        "\n - Room: 100$/ 1 ngày") ;
+    typeRoom = prompt("Bảng giá: "+
+        "\n - Vip"+
+        "\n - Business"+
+        "\n - Normal");
+    typeCustomer = prompt("Chọn Customer:" +
+        "\n Diamond" +
+        "\n Platinum"+
+        "\n Gold"+
+        "\n Silver" +
+        "\n Member");
+    discount  = parseInt(prompt("Nhập giảm giá: "));
+    quantityIncluded = prompt("Input QuantityIncluded :");
+    rendDays = prompt("Inpup RendDays :");
+    choose1= parseInt(prompt("1. Hiển thị thông tin KH" +
+        "\n2. Sửa thông tin" +
+        "\n3. Tổng giá: "));
+    switch (choose1) {
+        case 1 :
+            confirm("name :" +name+"\n"+"cmnd :" +cmnd
+                +"\n"+ "Birthday :" +birthday+
+                "\n"+ "Email :" +email+
+                "\n"+ "Address :" +address+
+                "\n"+"TypeService :" +typeService+
+                "\n"+ "TypeRoom :" +typeRoom+
+                "\n"+ "TypeCustomer :" +typeCustomer+
+                "\n"+ "Discount :" +discount+
+                "\n"+ "QuantityIncluded :" +quantityIncluded+
+                "\n"+ "RendDays :" +rendDays+
+                "\n"+ "TotalPay :" +totalPay);
+            break;
+        case 2 :
+            let sua = parseInt(prompt("1 :name :" +name+"\n"+"cmnd :" +cmnd
+                +"\n"+ "2 :Birthday :" +birthday+
+                "\n"+ "3 :Email :" +email+
+                "\n"+ "4 :Address :" +address+
+                "\n"+"5: TypeService :" +typeService+
+                "\n"+ "6: TypeRoom :" +typeRoom+
+                "\n"+ "7: TypeCustomer :" +typeCustomer+
+                "\n"+ "8: Discount :" +discount+
+                "\n"+ "9: QuantityIncluded :" +quantityIncluded+
+                "\n"+ "10: RendDays :" +rendDays));
+            switch (sua) {
+                case 1 :
+                    name = prompt("Nhập lại tên :");
+                    break;
+                case 2 :
+                    birthday = prompt("Nhập lại birthday: ");
+                    break;
+                case 3 :
+                    email = prompt("Nhập lại email");
+                    break;
+                case 4 :
+                    address = prompt("Nhập lại address");
+                    break;
+                case 5 :
+                    typeService =prompt ("Nhập lại typeService");
+                    break;
+                case 6 :
+                    typeRoom = prompt("Nhập lại typeRoom");
+                    break;
+                case 7 :
+                    typeCustomer = prompt("Nhập lại typeCustomer");
+                    break;
+                case 8 :
+                    quantityIncluded =prompt ("Nhập lại quantityIncluded");
+                    break;
+                case 9 :
+                    rendDays = prompt("Nhập lại rendDays");
+                    break;
+                default:
+                    alert("không có thông tin cần sửa")
+            }
+            confirm("name :" +name+"\n"+"cmnd :" +cmnd
+                +"\n"+ "Birthday :" +birthday+
+                "\n"+ "Email :" +email+
+                "\n"+ "Address :" +address+
+                "\n"+"TypeService :" +typeService+
+                "\n"+ "TypeRoom :" +typeRoom+
+                "\n"+ "TypeCustomer :" +typeCustomer+
+                "\n"+ "Discount :" +discount+
+                "\n"+ "QuantityIncluded :" +quantityIncluded+
+                "\n"+ "RendDays :" +rendDays)
+            break;
+        case 3 :
+        {
+            let tonggia;
+
+            if (typeService=="Villa"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        tonggia=500*rendDays*(1-discount/100) -15;
+                        break;
+                    case "Platinum":
+                        tonggia=500*rendDays*(1-discount/100) - 10;
+                        break;
+                    case "Gold":
+                        tonggia=500*rendDays*(1-discount/100) -5;
+                        break;
+                    case "Silver":
+                        tonggia=500*rendDays*(1-discount/100) -2;
+                        break;
+                    case  "Member":
+                        tonggia=500*rendDays*(1-discount/100);
+                }
+            } else if(typeService=="House"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        tonggia=300*rendDays*(1-discount/100)-15;
+                        break;
+                    case "Platinum":
+                        tonggia=300*rendDays*(1-discount/100)-10;
+                        break;
+                    case "Gold":
+                        tonggia=300*rendDays*(1-discount/100)-5;
+                        break;
+                    case "Silver":
+                        tonggia=300*rendDays*(1-discount/100)-2;
+                        break;
+                    case  "Member":
+                        tonggia=300*rendDays*(1-discount/100);
+                }
+            } else if(typeService=="Room"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        tonggia=100*rendDays*(1-discount/100)-15;
+                        break;
+                    case "Platinum":
+                        tonggia=100*rendDays*(1-discount/100)-10;
+                        break;
+                    case "Gold":
+                        tonggia=100*rendDays*(1-discount/100)-5;
+                        break;
+                    case "Silver":
+                        tonggia=100*rendDays*(1-discount/100)-2;
+                        break;
+                    case  "Member":
+                        tonggia=100*rendDays*(1-discount/100);
+                }
+            }
+
+            if(rendDays>7){
+                tonggia=tonggia-30;
+                if(tonggia>=5)
+                    tonggia=tonggia-20;
+            }else tonggia=tonggia-10;
+
+            if(address=="Đà Nẵng"){
+
+                let currentYear = new Date().getFullYear();
+                let birthday1 = new Date(birthday).getFullYear();
+                let ageCustomer = currentYear - birthday1;
+                if(ageCustomer>30)
+                    tonggia=tonggia-2;
+                if(ageCustomer<=30 && ageCustomer>=20)
+                    tonggia=tonggia-1;
+
+                a=a-20;
+            } else if(address=="Huế"){
+                tonggia=tonggia-10
+            } else tonggia=tonggia-5;
+
+            alert("Tổng tiền là: "+tonggia);
+        }
+            break;
+        default: alert("Failed");
+            break;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>puzzle</title>
+</head>
+<body>
+<table id="table"  >
+    <tr><td>   <img src="image/funny-cat1_part1x1.jpg" onclick="changeImg('1')" id="img1"></td></tr>
+    <tr><td>  <img src="image/funny-cat1_part2x1.jpg" onclick="changeImg('2')" id="img2"></td></tr>
+    <tr><td>  <img src="image/funny-cat1_part3x1.jpg" onclick="changeImg('3')" id="img3"></td></tr>
+    <tr><td>  <img src="image/funny-cat1_part4x1.jpg" onclick="changeImg('4')" id="img4"></td></tr>
+    <tr><td>  <img src="image/funny-cat1_part5x1.jpg" onclick="changeImg('5')" id="img5"></td></tr>
+</table>
+    <script>
+    function changeImg(indexImg) {
+        let img1 = document.getElementById('img1');
+        let img2 = document.getElementById('img2');
+        let img3 = document.getElementById('img3');
+        let img4 = document.getElementById('img4');
+        let img5 = document.getElementById('img5');
+        switch (indexImg) {
+            case "1" :
+                switch (img1.getAttribute("src")) {
+                    case "image/funny-cat1_part1x1.jpg" :
+                        img1.src = "image/monkey_part1x1.jpg";
+                        break;
+                    case "image/monkey_part1x1.jpg":
+                        img1.src = "image/panda_swap_part1x1.jpg";
+                        break;
+                    case "image/panda_swap_part1x1.jpg":
+                        img1.src = "image/funny-cat1_part1x1.jpg";
+                        break;
+                }
+                break;
+
+
+            case "2" :
+                switch (img2.getAttribute("src")) {
+                    case "image/funny-cat1_part2x1.jpg" :
+                        img2.src = "image/monkey_part2x1.jpg";
+                        break;
+                    case "image/monkey_part2x1.jpg":
+                        img2.src = "image/panda_swap_part2x1.jpg";
+                        break;
+                    case "image/panda_swap_part2x1.jpg":
+                        img2.src = "image/funny-cat1_part2x1.jpg";
+                        break;
+                }
+                break;
+
+            case "3" :
+                switch (img3.getAttribute("src")) {
+                    case "image/funny-cat1_part3x1.jpg" :
+                        img3.src = "image/monkey_part3x1.jpg";
+                        break;
+                    case "image/monkey_part3x1.jpg":
+                        img3.src = "image/panda_swap_part3x1.jpg";
+                        break;
+                    case "image/panda_swap_part3x1.jpg":
+                        img3.src = "image/funny-cat1_part3x1.jpg";
+                        break;
+                }
+                break;
+
+            case "4" :
+                switch (img4.getAttribute("src")) {
+                    case "image/funny-cat1_part4x1.jpg" :
+                        img4.src = "image/monkey_part4x1.jpg";
+                        break;
+                    case "image/monkey_part4x1.jpg":
+                        img4.src = "image/panda_swap_part4x1.jpg";
+                        break;
+                    case "image/panda_swap_part4x1.jpg":
+                        img4.src = "image/funny-cat1_part4x1.jpg";
+                        break;
+                }
+                break;
+
+            case "5" :
+                switch (img5.getAttribute("src")) {
+                    case "image/funny-cat1_part5x1.jpg" :
+                        img5.src = "image/monkey_part5x1.jpg";
+                        break;
+                    case "image/monkey_part5x1.jpg":
+                        img5.src = "image/panda_swap_part5x1.jpg";
+                        break;
+                    case "image/panda_swap_part5x1.jpg":
+                        img5.src = "image/funny-cat1_part5x1.jpg";
+                        break;
+                }
+                break;
+        }
+        document.getElementById("table").style.backgroundColor = "black";
+        if (img1.getAttribute("src") === "image/funny-cat1_part1x1.jpg" &&
+            img2.getAttribute("src") === "image/funny-cat1_part2x1.jpg" &&
+            img3.getAttribute("src") === "image/funny-cat1_part3x1.jpg" &&
+            img4.getAttribute("src") === "image/funny-cat1_part4x1.jpg" &&
+            img5.getAttribute("src") === "image/funny-cat1_part5x1.jpg"
+        ) {
+            document.getElementById("table").style.backgroundColor = "red"
+        } else if (img1.getAttribute("src") === "image/monkey_part1x1.jpg" &&
+            img2.getAttribute("src") === "image/monkey_part2x1.jpg" &&
+            img3.getAttribute("src") === "image/monkey_part3x1.jpg" &&
+            img4.getAttribute("src") === "image/monkey_part4x1.jpg" &&
+            img5.getAttribute("src") === "image/monkey_part5x1.jpg"
+        ) {
+            document.getElementById("table").style.backgroundColor = "red"
+        } else if (img1.getAttribute("src") === "image/panda_swap_part1x1.jpg" &&
+            img2.getAttribute("src") === "image/panda_swap_part2x1.jpg" &&
+            img3.getAttribute("src") === "image/panda_swap_part3x1.jpg" &&
+            img4.getAttribute("src") === "image/panda_swap_part4x1.jpg" &&
+            img5.getAttribute("src") === "image/panda_swap_part5x1.jpg"
+        ) {
+            document.getElementById("table").style.backgroundColor = "red"
+        }
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculate</title>
+</head>
+<body align="center">
+<form>
+<h1>Calculator</h1>
+<table align="center" border="1" height="500 px" width="500 px">
+    <tr><td colspan="4" style="padding: 0 0 0 0">
+        <input type="text" id="txtNumber" ></td></tr>
+    <tr>
+    <td><button type="reset" id="btAC" onclick="calculator('AC')">AC</button></td>
+    <td><button type="button" id="btD" onclick="calculator('Invert')">+/-</button></td>
+    <td><button type="button" id="btP" onclick="calculator('%')">%</button></td>
+    <td><button type="button" id="btA" onclick="calculator('+')">+</button></td>
+</tr>
+    <tr>
+        <td><button type="button" id="bt7" onclick="calculator('7')">7</button></td>
+        <td><button type="button" id="bt8" onclick="calculator('8')">8</button></td>
+        <td><button type="button" id="bt9" onclick="calculator('9')">9</button></td>
+        <td><button type="button" id="btT" onclick="calculator('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="bt4" onclick="calculator('4')">4</button></td>
+        <td><button type="button" id="bt5" onclick="calculator('5')">5</button></td>
+        <td><button type="button" id="bt6" onclick="calculator('6')">6</button></td>
+        <td><button type="button" id="btN" onclick="calculator('*')">&times;</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="bt1" onclick="calculator('1')">1</button></td>
+        <td><button type="button" id="bt2" onclick="calculator('2')">2</button></td>
+        <td><button type="button" id="bt3" onclick="calculator('3')">3</button></td>
+        <td><button type="button" id="btX" onclick="calculator('/')">&divide;</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="btM" onclick="calculator('SquareRoot')">&radic;</button></td>
+        <td><button type="button" id="btC" onclick="calculator('Square')">x&sup2;</button></td>
+        <td><button type="button" id="bt0" onclick="calculator('0')">0</button></td>
+        <td><button type="button" id="btB" onclick="result('=')">=</button></td>
+    </tr>
+</table>
+</form>
+<script>
+    function calculator(character) {
+        let txtNumber = document.getElementById("txtNumber").value;
+        document.getElementById("txtNumber").value = txtNumber + character;
+    }
+    function result() {
+        let result = eval(document.getElementById("txtNumber").value);
+        document.getElementById("txtNumber").value=result;
+    }
+</script>
+</body>
+</html>
