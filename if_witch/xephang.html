@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let diemgiuaky = prompt('Nhập điểm giữa kỳ');
-    let diemcuoiky = prompt('Nhập điểm cuối kỳ');
+    let diemgiuaky = parseInt(prompt('Nhập điểm giữa kỳ'));
+    let diemcuoiky = parseInt(prompt('Nhập điểm cuối kỳ'));
     let diem;
     diem = (diemgiuaky + diemcuoiky) / 2;
 
@@ -15,7 +15,11 @@
         alert('học sinh xếp hạng A')
     }else if(diem >= 6) {
         alert('học sinh xếp hạng B')
-    }else alert('học sinh xếp hang C')
+    }else if(diem < 6){
+        alert('học sinh xếp hang C')
+    }else  alert('Bạn nhập sai điểm')
+
+
 </script>
 </body>
 </html>

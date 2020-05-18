@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="dich()">Dịch</button>
+<p id="result"></p>
+<script>
+    function dich() {
+        let nhap = document.getElementById("nhap").value;
+        let a = ['hello','goodbey','name','morning', 'afternoon', 'yes', 'no'];
+        let b = ['xin chào','tạm biệt','tên', 'buổi sáng','buổi chiều', 'đúng','sai'];
+
+        for (i = 0 ; i < a.length; i++)
+        {
+            if (a[i] === nhap)
+            {
+                document.getElementById("result").innerHTML = b[i];
+                break;
+            }
+            else if ( i == a.length-1 )
+            {
+                document.getElementById("result").innerHTML = "không có";
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

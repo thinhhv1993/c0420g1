@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai18</title>
+</head>
+<body>
+Tổng số từ trong chuỗi :<p id="result"></p>
+<script>
+    let a= prompt("Nhập chuỗi :");
+    let array = a.split("",a.length);
+    let total = 0;
+    for ( i = 0 ; i < array.length;i ++){
+        if (array[i] == " ")
+        {
+            total += 1;
+        }
+    }
+    document.getElementById("result").innerHTML = total + 1;
+</script>
+</body>
+</html>

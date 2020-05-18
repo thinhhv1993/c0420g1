@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai14</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script>
+    let result = document.getElementById("result");
+    for (let i=1;i<=14;i++)
+    {
+        for (let j=1;j<=50;j++)
+        {
+            if ((j>=20)&&(j<=30)&&(i==1))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if ((j>=22)&&(j<=28)&&(i==2))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if ((j>=24)&&(j<=26)&&(i==3))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if (((j<=10)&&(i==1))||((j>=40)&&(i==1)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if (((j<=8)&&(i==2))||((j>=42)&&(i==2)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=6)&&(i==3))||((j>=44)&&(i==3)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if (((j<=7)&&(i==4))||((j>=43)&&(i==4)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            } else if (((j<=8)&&(i==5))||((j>=42)&&(i==5)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=9)&&(i==6))||((j>=41)&&(i==6)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=10)&&(i==7))||((j>=40)&&(i==7)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=12)&&(i==8))||((j>=38)&&(i==8)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=14)&&(i==9))||((j>=36)&&(i==9)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=16)&&(i==10))||((j>=34)&&(i==10)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=18)&&(i==11))||((j>=32)&&(i==11)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=21)&&(i==12))||((j>=29)&&(i==12)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=23)&&(i==13))||((j>=27)&&(i==13)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else if (((j<=24)&&(i==14))||((j>=26)&&(i==14)))
+            {
+                result.textContent = result.textContent + "&ensp;";
+            }  else result.textContent = result.textContent + "*";
+        }
+        result.textContent = result.textContent + "<br>";
+    }
+    result.innerHTML =result.textContent;
+</script>
+</body>
+</html>

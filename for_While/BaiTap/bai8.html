@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+<button id="choi" onclick="game()">Choi</button>
+<script>
+    function game()
+    {
+        let a = prompt("Nhập vào khoảng muốn đoán từ:")*1;
+        let b = prompt("Nhập vào khoảng muốn đoán đến:")*1;
+        let c = Math.round(Math.random((b-a)*(b-a))+a);
+        if ( a > b)
+        {
+          b < c < a;
+        } else
+        {
+          a < c < b;
+        }
+
+        for (i = 1 ; i <= 4 ; i++)
+        {
+            if (i === 4)
+            {
+                alert("Bạn đã thua");
+                break;
+            }
+            let d = prompt("Nhập vào số bạn muốn đoán :")*1;
+
+            if (d > c)
+            {
+                alert("Bạn đã nhập số lớn hơn")
+            }else if ( d < c)
+            {
+                alert("Bạn đá nhập số nhỏ hơn")
+            }
+             if (d == c)
+            {
+                alert("Bạn đã chọn đúng")
+                break;
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

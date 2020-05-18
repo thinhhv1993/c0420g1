@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>hoahong</title>
 </head>
 <body>
-$END$
+<script>
+    let doanhthu = parseInt(prompt("Nhập doanh số bán hàng"));
+    let hoahong;
+
+    if ( doanhthu <= 200000 && doanhthu >=0) {
+        hoahong = doanhthu / 100 * 3
+    } else if ( doanhthu <=600000 ){
+        hoahong = doanhthu / 100 * 5
+    }else {
+        hoahong = doanhthu / 100 * 10
+    }
+    alert(parseFloat(hoahong).toFixed(2))
+</script>
 </body>
 </html>

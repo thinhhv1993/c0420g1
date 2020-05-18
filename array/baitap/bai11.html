@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai11</title>
+</head>
+<body>
+<script>
+    let x = prompt("Nhap vao cac gia tri trong mang:");
+    let array = x.split("",x.length);
+    let nguyenam = ['a','ă','â','e','ê','i','o','ô','ơ','ư','u','y'];
+    let dem = 0;
+    for(i=0; i < array.length;i++)
+    {
+        for (j = 0 ;j<nguyenam.length;j++)
+        if (nguyenam[j] === array[i]){
+            dem++;
+            break;
+        }
+    }
+    alert("Số lượng số nguyên âm trong chuối là : " + dem)
+</script>
+</body>
+</html>

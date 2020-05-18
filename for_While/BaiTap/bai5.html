@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhập vào số lượng số muốn công trong dãy fibonasi")
+    let num1 = 0;
+    let num2 = 1;
+    let num3;
+    let tong = 1;
+    for (i=2;i<n;i++)
+    {
+        num3 = num1 + num2;
+        tong = tong + num3 ;
+        num1 = num2;
+        num2 = num3;
+
+    }
+    alert(tong)
+</script>
+</body>
+</html>

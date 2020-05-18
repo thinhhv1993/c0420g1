@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ptbac2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập a :'));
+    let b = parseInt(prompt('Nhập b :'));
+    let c = parseInt(prompt('Nhập c :'));
+    let x1;
+    let x2;
+    if (a==0){
+        if (b == 0){
+            if (c == 0){
+                alert("phương trình có vô số nghiệm")
+            }else {
+                alert("phương trình vô nghiệm")
+            }
+        }else {
+            x2 = -c / b;
+            alert('Phương trình có nghiệm x = ' + x2);
+        }
+    }else {
+        x1 = ((-b - (Math.sqrt(Math.pow(b, 2) - (4 * a * c))))) / (2 * a);
+        x2 = ((-b + (Math.sqrt(Math.pow(b, 2) - (4 * a * c))))) / (2 * a);
+        alert("Phương trình có 2 nghiệm :"+ "x1 = " + x1 + "x2 = "  + x2)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập nhiệt độ của bạn :");
+    while (a<=20 || a>=100 )
+    {
+        if (a>=100)
+        {
+            alert("bạn phải giảm nhiệt độ.")
+        }else if(a<=20)
+        {
+            alert("bạn phải tăng nhiệt độ")
+        }
+    a = prompt("nhập lại nhiệt độ :")
+    }
+    alert("Nhiệt độ đã điều chỉnh xong" +a)
+
+</script>
+</body>
+</html>

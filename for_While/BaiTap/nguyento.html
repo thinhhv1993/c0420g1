@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyento</title>
+</head>
+<body>
+
+    <script>
+      let a = parseInt(prompt("Nhập số lượng số nguyên tố cần in "));
+      // cont là biến đếm số lượng số nguyên tố cần in ra có bằng với số a đã nhập không;
+      let count = 0;
+      // gán N = 2 để kiểm  tra số nguyên tố
+      let N = 2;
+      // vòng lặp để kiểm tra số lượng số nguyên tố cần in ra
+       while (count < a)
+       {
+
+               // kiểm tra số ướt của số nguyên tố
+               let kiemtra = 0;
+               // vòng lặp đếm từ 1 để kiểm tra các số trong dãy có phải số nguyên tố không
+               for (i = 1; i <= N; i++)
+               {
+                   if (N % i == 0)
+                   {
+                       kiemtra++;
+                   }
+               }
+               if (kiemtra == 2)
+               {
+                       count++;
+                       document.write(N + ', ');
+               }
+
+           N++;
+
+       }
+</script>
+</body>
+</html>

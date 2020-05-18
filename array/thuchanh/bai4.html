@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let max = x[0];
+    let index = 0;
+    //Bước 4: Dùng vòng lặp duyệt toàn bộ mảng x từ phần tử tiếp theo đến hết mảng.
+    // Kiểm tra nếu một phần tử trong mảng x có giá trị lớn hơn max thì gáb max chính là phần tử đó và gán index
+    // bằng vị trí của phần tử đó.
+    for (let i = 1; i < x.length; i++) {
+        if (x[i] > max) {
+            max = x[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>

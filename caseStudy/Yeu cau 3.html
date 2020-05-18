@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body style="background-color: antiquewhite">
+<script>
+    let name;
+    let cmnd;
+    let birthday;
+    let email;
+    let address;
+    let typeService;
+    let typeRoom;
+    let typeCustomer;
+    let discount;
+    let quantityIncluded;
+    let rendDays;
+    let totalPay;
+    let check = false;
+
+    name = prompt("Input Name :");
+    do{
+        cmnd = prompt("Input Cmnd : ");
+        //kiểm tra cnmd phải là số không
+        // để dấu ! trước isNaN để nếu là chuối thì true còn không phải là
+       if (!isNaN(cmnd)){
+           cmnd=Number.parseFloat(cmnd);
+       }
+        if (!Number.isInteger(cmnd)){
+            alert("CMND không đúng định dạng.");
+            continue;
+        }
+        if (cmnd < 100000000 || cmnd > 999999999 ){
+            alert("CMND không đúng định dạng.");
+            continue;
+        }
+        check = true;
+    }while(!check)
+    check = false;
+    do {
+        birthday = prompt("Input Birthday :");
+        birthday = new Date[ngay,thang,nam];
+        {
+            if(ngay != birthday.getDate()){
+                alert('Day is not valid!');
+                continue;
+            }
+            if(thang != birthday.getMonth()){
+                alert('Month is not valid!');
+                continue;
+            }
+            if(nam != birthday.getFullYear()){
+                alert('Year is not valid!');
+                continue;
+            }
+        }
+        check = true;
+    } while (!check)
+        check = true
+
+   do {
+       let countAt = 0;
+       let countDoc = 0;
+       email = prompt("Input Email : ");
+       for (let i = 0; i < email.length; i++) {
+           if (email.charAt(i) === "@") {
+               countAt++;
+
+               for (let j = i + 1; j < email.length; j++) {
+                   if (email.charAt(j) === ".") {
+                       countDoc++;
+                   }
+               }
+           }
+           if (countDoc < 1 || countAt != 1) {
+               alert("email bạn nhập không đúng");
+           } else {
+               check = true;
+           }
+       }
+   }
+       while (!check) ;
+       check = false;
+       address = prompt("Input Address :");
+       typeService = prompt("Input TypeService: ");
+       typeRoom = prompt("Input TypeRoom :");
+       typeCustomer = prompt("Input TypeCustomer: ");
+       discount = prompt("Input Discount: ");
+       quantityIncluded = prompt("Input QuantityIncluded :");
+       rendDays = prompt("Inpup RendDays :");
+       totalPay = 300 * rendDays * (1 - discount / 100);
+
+       confirm("name :" + name + "\n" + "cmnd :" + cmnd
+           + "\n" + "Birthday :" + birthday +
+           "\n" + "Email :" + email +
+           "\n" + "Address :" + address +
+           "\n" + "TypeService :" + typeService +
+           "\n" + "TypeRoom :" + typeRoom +
+           "\n" + "TypeCustomer :" + typeCustomer +
+           "\n" + "Discount :" + discount +
+           "\n" + "QuantityIncluded :" + quantityIncluded +
+           "\n" + "RendDays :" + rendDays +
+           "\n" + "TotalPay :" + totalPay);
+
+</script>
+</body>
+</html>

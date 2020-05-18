@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai20</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let a = prompt("nhập vào chuỗi :")
+    while (a.indexOf("-") !== -1)
+    {
+        // replace thay thế giá trị trong chuỗi
+        a = a.replace("-","_")
+    }
+    document.getElementById("result").innerHTML = a;
+</script>
+</body>
+</html>

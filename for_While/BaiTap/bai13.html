@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai13</title>
+</head>
+<body>
+<script>
+    let amount = prompt("Nhap so tien tiet kiem(USD)")*1;
+    let laisuat = prompt("Nhap lai suat ngan hang(%)")*1;
+    let month = prompt("Nhap so thang ban gui(month)")*1;
+    while(month>0){
+        amount = amount+amount*laisuat/100;
+        month--;
+    }
+    alert("So tien ban nhan duoc :" + amount);
+</script>
+</body>
+</html>

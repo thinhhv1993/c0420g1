@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai13</title>
+</head>
+<body>
+<script>
+    let array = new Array();
+    for (i = 0 ; i < 10 ; i++ ){
+        array[i] = prompt("Nhập vào mảng 10 số nguyên")
+        array.sort(function(a, b){return b - a});
+    }
+    //Hàm so sánh sẽ trả về một giá trị âm, 0 hoặc giá trị dương phụ thuộc vào các đối số:
+   // Ví dụ:
+    // function(a, b){return a-b}
+    //Trước tiên, hàm sort() so sánh hai 2 trị bằng cách đưa 2 giá trị đó vào hàm so sánh.
+    // Sau đó mới thực hiện sắp xếp chúng dựa trên kết quả trả về (là giá trị âm, 0 hoặc giá trị dương).
+    alert(array)
+</script>
+</body>
+</html>

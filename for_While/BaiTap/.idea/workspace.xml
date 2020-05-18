@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2eeb4dc5-4c46-44a6-8766-db3d1a0857b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cuuChuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/CF.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/fM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/pt1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/ptbac2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/sNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/sTamgiac.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/svuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../if_witch/tuoinguoi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/do_While.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/do_While.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/for2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/for2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/for3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/for3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/while1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/while1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/while2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/while2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thuchanh/while3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuchanh/while3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../for.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/Yeu cai 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/cuodienthoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../if_witch/cuodienthoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../if_witch/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/hoaHong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../if_witch/hoaHong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/loveme.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../if_witch/loveme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../if_witch/xephang.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../if_witch/xephang.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1boeaWShNB2hyeAkBZ5cFYTLtvS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eeb4dc5-4c46-44a6-8766-db3d1a0857b0" name="Default Changelist" comment="" />
+      <created>1589302936074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589302936074</updated>
+      <workItem from="1589302937462" duration="805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="140" key="FileChooserDialogImpl" timestamp="1589303893193">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="432" y="140" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1589303893193" />
+  </component>
+</project>

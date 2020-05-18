@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<h1>Game Cờ Caro</h1>
+<p id="result"></p>
+<script>
+    let num1 = 10;
+    let num2 = 10;
+    let str = "";
+    let player = true;
+    let result = document.getElementById("result");
+    let board = new Array();
+    function kiemtra(x,y) {
+        if ((board[x][y]==board[x-1][y-1])&&(board[x][y]==board[x-2][y-2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x-1][y+1])&&(board[x][y]==board[x-2][y+2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x+1][y-1])&&(board[x][y]==board[x+2][y-2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x+1][y+1])&&(board[x][y]==board[x+2][y+2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x][y+1])&&(board[x][y]==board[x][y+2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x][y-1])&&(board[x][y]==board[x][y-2])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x+1][y])&&(board[x][y]==board[x+2][y])) {
+            alert("Trò chơi kết thúc!!");
+        } else
+            if ((board[x][y]==board[x-1][y])&&(board[x][y]==board[x-2][y])) {
+            alert("Trò chơi kết thúc!!");
+        }
+    }
+    function change(x,y)
+    {
+        let str = "";
+        if (player) {
+            board[x][y] = "<button>x</button>";
+            player = false;
+        } else {
+            board[x][y] = "<button>o</button>";
+            player = true;
+        }
+        kiemtra(x,y);
+        for (let i=0;i<num1;i++){
+            for (let j=0;j<num2;j++) {
+                str += board[i][j];
+            }
+            str += "<br>";
+        }
+        result.innerHTML = str;
+    }
+    for (let i=0;i<num1;i++){
+        board[i] = new Array();
+        for (let j=0;j<num2;j++) {
+            board[i][j] = "<button onclick=" + "'change(" + i + "," + j +")'" + ">&bull;</button>";
+            str += board[i][j];
+        }
+        str += "<br>";
+    }
+    result.innerHTML = str;
+</script>
+</body>
+</html>
