@@ -21,76 +21,109 @@
     let check = false;
 
     name = prompt("Input Name :");
-    do{
-        cmnd = prompt("Input Cmnd : ");
-        //kiểm tra cnmd phải là số không
-        // để dấu ! trước isNaN để nếu là chuối thì true còn không phải là
-       if (!isNaN(cmnd)){
-           cmnd=Number.parseFloat(cmnd);
-       }
-        if (!Number.isInteger(cmnd)){
-            alert("CMND không đúng định dạng.");
-            continue;
-        }
-        if (cmnd < 100000000 || cmnd > 999999999 ){
-            alert("CMND không đúng định dạng.");
-            continue;
-        }
-        check = true;
-    }while(!check)
-    check = false;
-    do {
-        birthday = prompt("Input Birthday :");
-        birthday = new Date[ngay,thang,nam];
-        {
-            if(ngay != birthday.getDate()){
-                alert('Day is not valid!');
-                continue;
-            }
-            if(thang != birthday.getMonth()){
-                alert('Month is not valid!');
-                continue;
-            }
-            if(nam != birthday.getFullYear()){
-                alert('Year is not valid!');
-                continue;
-            }
-        }
-        check = true;
-    } while (!check)
-        check = true
-
-   do {
-       let countAt = 0;
-       let countDoc = 0;
-       email = prompt("Input Email : ");
-       for (let i = 0; i < email.length; i++) {
-           if (email.charAt(i) === "@") {
-               countAt++;
-
-               for (let j = i + 1; j < email.length; j++) {
-                   if (email.charAt(j) === ".") {
-                       countDoc++;
-                   }
-               }
-           }
-           if (countDoc < 1 || countAt != 1) {
-               alert("email bạn nhập không đúng");
-           } else {
-               check = true;
-           }
-       }
-   }
-       while (!check) ;
-       check = false;
-       address = prompt("Input Address :");
-       typeService = prompt("Input TypeService: ");
-       typeRoom = prompt("Input TypeRoom :");
-       typeCustomer = prompt("Input TypeCustomer: ");
-       discount = prompt("Input Discount: ");
-       quantityIncluded = prompt("Input QuantityIncluded :");
-       rendDays = prompt("Inpup RendDays :");
-       totalPay = 300 * rendDays * (1 - discount / 100);
+   //  do{
+   //      cmnd = prompt("Input Cmnd : ");
+   //      //kiểm tra cnmd phải là số không
+   //      // để dấu ! trước isNaN để nếu là chuối thì true còn không phải là
+   //     if (!isNaN(cmnd)){
+   //         cmnd=Number.parseFloat(cmnd);
+   //     }
+   //      if (!Number.isInteger(cmnd)){
+   //          alert("CMND không đúng định dạng.");
+   //          continue;
+   //      }
+   //      if (cmnd < 100000000 || cmnd > 999999999 ){
+   //          alert("CMND không đúng định dạng.");
+   //          continue;
+   //      }
+   //      check = true;
+   //  }while(!check)
+   //  check = false;
+   //
+   //  do {
+   //       birthday = prompt("Input Birthday :");
+   //      let date_array = birthday.split("/");
+   //      let day = parseInt(date_array[0],10);
+   //      let month = parseInt(date_array[1],10);
+   //      let year = parseInt(date_array[2],10);
+   //      let date = new Date(year,month,day);
+   //          if(day == date.getDate()&&(month == date.getMonth())&&(year == date.getFullYear())){
+   //              check = true;
+   //          // }
+   //          // if(month !== date_array.getMonth()){
+   //          //     alert('Month is not valid!');
+   //          //     continue;
+   //          // }
+   //          // if(year !== date_array.getFullYear()){
+   //          //     alert('Year is not valid!');
+   //          //     continue;
+   //          }
+   //          else {
+   //      alert('Day is not valid!');}
+   //  } while (!check)
+   //      check = false;
+   //
+   // do {
+   //     let countAt = 0;
+   //     let countDoc = 0;
+   //     email = prompt("Input Email : ");
+   //     for (let i = 0; i < email.length; i++) {
+   //         if (email.charAt(i) === "@") {
+   //             countAt++;
+   //
+   //             for (let j = i + 1; j < email.length; j++) {
+   //                 if (email.charAt(j) === ".") {
+   //                     countDoc++;
+   //                 }
+   //             }
+   //         }
+   //         if (countDoc < 1 || countAt != 1) {
+   //             alert("email bạn nhập không đúng");
+   //         } else {
+   //             check = true;
+   //         }
+   //     }
+   // }
+   //     while (!check) ;
+   //     check = false;
+   //     address = prompt("Input Address :");
+   //     typeService = prompt("Input TypeService: ");
+   //     typeRoom = prompt("Input TypeRoom :");
+   //     typeCustomer = prompt("Input TypeCustomer: ");
+   //     do {
+   //         discount = parseInt(prompt("Input Discount: "));
+   //         if (discount > 0){
+   //             check = true
+   //         }else
+   //         {
+   //             alert("giản giá phải lớn hơn 0")
+   //         }
+   //     }
+   //     while (!check)
+   //  check = false;
+   //     do{
+   //     quantityIncluded = prompt("Input QuantityIncluded :");
+   //         if (quantityIncluded > 0){
+   //             check = true
+   //         }else
+   //         {
+   //             alert("người đi kèm phải lớn hơn 0")
+   //         }
+   //     }
+   //     while (!check)
+   //      check = false;
+   //     do{
+   //     rendDays = parseInt(prompt("Inpup RendDays :"));
+   //     if (rendDays > 0){
+   //         check = true
+   //     }else
+   //     {
+   //         alert("ngày thuê phải lớn hơn 0")
+   //     }
+   //     }
+   //     while (!check)
+   //  check = false;
+   //     totalPay = 300 * rendDays * (1 - discount / 100);
 
        confirm("name :" + name + "\n" + "cmnd :" + cmnd
            + "\n" + "Birthday :" + birthday +
@@ -103,7 +136,134 @@
            "\n" + "QuantityIncluded :" + quantityIncluded +
            "\n" + "RendDays :" + rendDays +
            "\n" + "TotalPay :" + totalPay);
+    let choose1=parseInt(prompt("1. Hiển thị thông tin KH" +
+        "\n2. Sửa thông tin" +
+        "\n3. Tổng giá: "));
+    switch (choose1) {
+        case 1:
+            prompt("Họ tên: " +name
+                + "\nEmail: " + email
+                + "\nCMND: " + cmnd
+                + "\nSố ngày thuê: " +rentDays
+                + "\nLoại phòng: " +typeService
+                + "\nHạng khách: " +typeCustomer);
+            break;
+        case 2:
+        {
+            let choose2 =parseInt(prompt("1.Họ tên: " +name
+                + "\n2. Email: " + email
+                + "\n3. CMND: " + cmnd
+                + "\n4. Số ngày thuê: " +rentDays
+                + "\n5. Loại phòng: " +typeService
+                + "\n6. Hạng khách: " +typeCustomer
+                + "\n7. Chọn hàng mục cần sửa"));
+            switch (choose2) {
+                case 1:
+                    name = prompt("Nhập lại tên: ");
+                    break;
+                case  2:
+                    email = prompt("Nhập lại email: ");
+                    break;
+                case  3:
+                    cmnd= prompt("Nhập lại CMND: ");
+                    break;
+                case  4:
+                    rentDays= prompt("Nhập số ngày thuê: ");
+                    break;
+                case 5:
+                    typeService = prompt("Nhập loại phòng: ");
+                    break;
+                case 6:
+                    typeCustomer = prompt("Nhập lại khách: ");
+                    break;
+                default: alert("Không có trong trình đơn");
+            }
+        }
+            break;
+        case 3:
+        {
+            let a;
 
+            if (typeService=="Villa"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        a=500*rentDays*(1-disCount/100) -15;
+                        break;
+                    case "Platinum":
+                        a=500*rentDays*(1-disCount/100) - 10;
+                        break;
+                    case "Gold":
+                        a=500*rentDays*(1-disCount/100) -5;
+                        break;
+                    case "Silver":
+                        a=500*rentDays*(1-disCount/100) -2;
+                        break;
+                    case  "Member":
+                        a=500*rentDays*(1-disCount/100);
+                }
+            } else if(typeService=="House"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        a=300*rentDays*(1-disCount/100)-15;
+                        break;
+                    case "Platinum":
+                        a=300*rentDays*(1-disCount/100)-10;
+                        break;
+                    case "Gold":
+                        a=300*rentDays*(1-disCount/100)-5;
+                        break;
+                    case "Silver":
+                        a=300*rentDays*(1-disCount/100)-2;
+                        break;
+                    case  "Member":
+                        a=300*rentDays*(1-disCount/100);
+                }
+            } else if(typeService=="Room"){
+                switch (typeCustomer) {
+                    case "Diamond":
+                        a=100*rentDays*(1-disCount/100)-15;
+                        break;
+                    case "Platinum":
+                        a=100*rentDays*(1-disCount/100)-10;
+                        break;
+                    case "Gold":
+                        a=100*rentDays*(1-disCount/100)-5;
+                        break;
+                    case "Silver":
+                        a=100*rentDays*(1-disCount/100)-2;
+                        break;
+                    case  "Member":
+                        a=100*rentDays*(1-disCount/100);
+                }
+            }
+
+            if(rentDays>7){
+                a=a-30;
+                if(a>=5)
+                    a=a-20;
+            }else a=a-10;
+
+            if(address=="Đà Nẵng"){
+
+                let currentYear = new Date().getFullYear();
+                let birthday1 = new Date(birthday).getFullYear();
+                let ageCustomer = currentYear - birthday1;
+                if(ageCustomer>30)
+                    a=a-2;
+                if(ageCustomer<=30 && ageCustomer>=20)
+                    a=a-1;
+
+                a=a-20;
+            } else if(address=="Huế"){
+                a=a-10
+            } else a=a-5;
+
+            alert("Tổng tiền là: "+a);
+        }
+
+            break;
+        default: alert("Failed");
+    }
 </script>
 </body>
 </html>

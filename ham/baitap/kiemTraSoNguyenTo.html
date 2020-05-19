@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<input id="inputFahrenheit" type="number"
+       oninput="temperatureConverter(this.value)"
+       onchange="temperatureConverter(this.value)">
+<p>Celsius: <span id="outputCelsius"></span></p>
+<script>
+    function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        if(0 < valNum && valNum <1000)
+        {
+         let kiemtra = 0;
+            for (i = 1; i <= valNum; i++)
+            {
+            if (valNum % i == 0)
+                {
+                kiemtra++;
+                }
+            }
+            if (kiemtra == 2)
+            {
+            document.getElementById("outputCelsius").innerHTML = "số " + valNum + " là số nguyên tố" ;
+            }
+            else {
+                document.getElementById("outputCelsius").innerHTML = "số " + valNum + " không phải là số nguyên tố";
+            }
+        }
+        else {
+            document.getElementById("outputCelsius").innerHTML = "số " + valNum + " không nằm trong dãy số 0 > 1000 bạn nhé";
+        }
+    }
+</script>
+</body>
+</html>
