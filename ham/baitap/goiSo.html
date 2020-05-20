@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>callNumber</title>
+</head>
+<body>
+<p>call Number</p>
+<input id="inputNumber" type="number" placeholder="number"
+       oninput="callNumber(this.value)"
+       onchange="callNumber(this.value)">
+<p>Số Tăng lên 1: <span id="outputNumber"></span></p>
+<script>
+    function callNumber() {
+        number = document.getElementById("inputNumber").value;
+        number = parseFloat(number)
+        document.getElementById("outputNumber").innerHTML = number +1;
+    }
+</script>
+</body>
+</html>

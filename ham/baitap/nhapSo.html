@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inputNumber</title>
+</head>
+<body>
+<h1>Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+    hiển thị hộp thoại thông báo cho người dùng.
+    Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</h1>
+Number 1 :<input id="inputNumber1" type="number"><br><br>
+Number 2 :<input id="inputNumber2" type="number"><br><br>
+<button onclick="sosanh()"> Kết quả</button>&ensp;<span id="result"></span>
+<script>
+    function sosanh(){
+        let number1 = document.getElementById("inputNumber1").value;
+        number1 = parseFloat(number1)
+        let number2 = document.getElementById("inputNumber2").value;
+        number2 = parseFloat(number2)
+    if (number1 > number2){
+        alert("số thứ nhất lớn hơn số thứ 2");
+    }else if(number1 < number2 || number1 == number2)
+    {
+        document.getElementById("result").innerHTML = number1 + number2;
+    }
+    }
+</script>
+</body>
+</html>

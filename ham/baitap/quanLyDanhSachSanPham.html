@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quanLy</title>
+</head>
+<body>
+<h1>Ứng dụng quản lý sản phẩm sử dụng hàm</h1>
+<table>
+    <tr>
+        <td><input id="nameProduct" type="text"><button id="addProduct" onclick="addProduct()">Thêm Sản Phẩm</button></td>
+        <td></td>
+    </tr>
+    <tr><td><h2>Display all product</h2></td></tr>
+    <tr><td><p id="hienthi"></p></td></tr>
+</table>
+
+
+<script>
+    var nameProduct = document.getElementById("nameProduct");
+    let listProduct = new Array();
+    displayProduct()
+    function displayProduct() {
+        let display = '<table border="1">\n' +
+        '<tr>\n' +
+        '<th style="height: 20px;width: 200px">Tên Sản phẩm</th>\n'+
+        '<th style="height: 20px;width: 200px"></th>\n'+
+        '<th style="height: 20px;width: 200px"></th>\n'+
+        '</tr>'
+        for (let i = 0; i < listProduct.length; i++) {
+            display += '<tr>\n' +
+                '<td style="height: 20px;width: 200px">' + listProduct[i] + '</td>\n' +
+                '<td style="height: 20px;width: 30px"><button onclick="editProduct(' + i + ')">Sửa</button></td>\n' +
+                '<td style="height: 20px;width: 30px"><button onclick="deleteProduct(' + i + ')">Xóa</button></td>\n' +
+                '</tr>'
+        }
+        display += '</table>';
+        document.getElementById("hienthi").innerHTML = display;
+    }
+
+    function addProduct() {
+        listProduct.push(nameProduct.value);
+        displayProduct();
+    }
+    function editProduct(i) {
+        let nameProduct1 = prompt('Nhập tên sản phẩm:');
+        if (nameProduct1 == null){
+            listProduct[i]= listProduct[i];
+        } else {
+            listProduct[i]=nameProduct1;
+        }
+        displayProduct();
+    }
+
+    function deleteProduct(i) {
+        let a = confirm("Bạn muốn xóa sản phẩm")
+            if ( a == true){
+                listProduct.splice(i,1);
+            }
+            displayProduct();
+
+    }
+</script>
+</body>
+</html>

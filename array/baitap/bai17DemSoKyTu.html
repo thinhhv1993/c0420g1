@@ -9,10 +9,9 @@
 <script>
     let num = prompt("Nhập số ký tự của mảng")*1;
     let array = new Array();
-    let total = 0;
+    let total = num;
     for (let i=0;i<num;i++) {
         array[i] = prompt("Ky tu " + i);
-        total += array[i].length;
     }
     str = "Mảng ký tự ban đầu :" + array.join(",") + "<br>";
     str += "Tổng số ký tự của mảng :" + total + "<br>";

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>soNguyen</title>
+</head>
+<body>
+<h1>Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.</h1>
+<script>
+    let twoNumber = new Array(2)
+    function checkNumb(numb) {
+        for (i=0; i < numb.length; i++){
+            numb[i] = prompt("Nhập số thứ " + i+1 )
+            numb[i] = parseFloat(numb[i])
+        }
+        numb.reverse()
+        alert(numb)
+    }checkNumb(twoNumber)
+</script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 Tổng số từ trong chuỗi :<p id="result"></p>
 <script>
     let a= prompt("Nhập chuỗi :");
-    let array = a.split("",a.length);
+    let array = a.trim().split("",a.length);
     let total = 0;
     for ( i = 0 ; i < array.length;i ++){
         if (array[i] == " ")

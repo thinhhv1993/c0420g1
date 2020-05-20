@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>feetVsMeet</title>
 </head>
 <body>
-$END$
+<h1>CHUYỂN ĐỔI FOOT VS METER </h1>
+<p>FOOT :<input id="foot" type="number"
+       oninput="converFoot()"
+       onchange="converFoot()"></p><br>
+<P>MEET :<input id="meter" type="number"
+       oninput="convertMeter()"
+       onchange="convertMeter()"></P>
+<script>
+    // meter = document.getElementById("meet").value;
+    // meter = parseFloat(meet);
+    // foot = document.getElementById("foot").value;
+    // foot = parseFloat(foot);
+    function converFoot() {
+     let  meter = document.getElementById("meter");
+     let   foot = document.getElementById("foot").value;
+     meter.value =  0.305 * foot
+    }
+    function convertMeter() {
+        let  meter = document.getElementById("meter").value;
+        let   foot = document.getElementById("foot");
+        foot.value = 3.279 * meter
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm sử dụng hàm</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input id='newProduct' type="text">
+<button onclick="addProduct()">Add</button>
+<h1>Display All Product</h1>
+
+<div id="resultTable"></div>
+
+<script>
+    let arrProduct = new Array();
+
+    function showProduct() {
+
+        let str = '<table width=600px>';
+        let result = document.getElementById('resultTable');
+
+        str += '<tr>';
+        str += '<td>';
+        str += '<h4>';
+        str += 'Product Name';
+        str += '</h4>';
+        str += '</td>';
+        str += '<td>';
+        str += '</td>';
+        str += '<td>';
+        str += arrProduct.length+' product';
+        str += '</td>';
+        str += '</tr>';
+
+        for (let i=0;i<arrProduct.length;i++) {
+            str += '<tr>';
+            str += '<td>';
+            str += arrProduct[i];
+            str += '</td>';
+            str += '<td>';
+            str += '<button onclick="editProduct('+i+')">Edit</button>';
+            str += '</td>';
+            str += '<td>';
+            str += '<button onclick="deleteProduct('+i+')">Delete</button>';
+            str += '</td>';
+            str += '</tr>';
+        }
+
+        str += '</table>';
+        result.innerHTML = str;
+    }
+
+    function addProduct() {
+        let newProduct = document.getElementById('newProduct');
+        arrProduct.push(newProduct.value);
+        showProduct();
+        alert('Bạn đã thêm sản phẩm');
+    }
+
+    function editProduct(pos) {
+        arrProduct[pos] = prompt('Nhập tên sản phẩm:');
+        showProduct();
+        alert('Bạn đã sửa tên sản phẩm');
+    }
+
+    function deleteProduct(pos) {
+        for (let i=pos;i<arrProduct.length;i++) {
+            arrProduct[i] = arrProduct[i+1]
+        }
+        arrProduct.pop();
+        showProduct();
+        alert('Bạn đã xóa sản phẩm');
+    }
+</script>
+</body>
+</html>

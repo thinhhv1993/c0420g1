@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemTra</title>
+</head>
+<body>
+<h1> Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </h1>
+    <script>
+    let n = prompt("Nhập vào số lượng ký tự trong mảng :")
+    function checkNumb(numb) {
+        let chuoikytu = numb.split("",numb.length)
+        let n2 = prompt("Nhập vào ký tự muốn kiểm tra")
+        let dem = 0;
+        for (i = 0; i < chuoikytu.length;i++){
+            if (chuoikytu[i] == n2){
+                dem ++;
+            }
+            }
+        if (dem == 0) {
+            alert(-1)
+        } else
+        alert("số lần xuất hiện của ký tự" + n2 + "trong mảng là : " +dem)
+    }checkNumb(n)
+</script>
+</body>
+</html>

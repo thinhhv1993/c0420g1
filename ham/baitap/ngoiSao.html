@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>star</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let star3 = prompt("Nhập tên ngôi sao");
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let star2 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor","Leo"];
+    function star(str){
+        for (  i = 0 ; i < star1.length; i++)
+        {
+            if ( str == star1[i]){
+                document.getElementById("result").innerHTML = star2[i];
+                break;
+            }
+            else if (i == star1.length - 1 ){
+                alert("không tìm thấy ngôi sao nào")
+            }
+        }
+    }
+   star(star3);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so</title>
+</head>
+<body>
+<h1> Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</h1>
+<SCRIPT>
+    let a = new Array(3);
+    function kiemtra(so) {
+        for (i=0; i < so.length; i++){
+            so[i] = prompt("Nhập số thứ " + i )
+            so[i] = parseFloat(so[i])
+        }
+        let min = so[0];
+        for (j = 0 ; j < so.length; j++){
+            if(so[j] < min || so[j] == min){
+                min = so[j];
+            }
+        }
+            alert(min);
+    }
+    kiemtra(a)
+</SCRIPT>
+</body>
+</html>

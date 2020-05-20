@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sCircle</title>
+</head>
+<body>
+<h1>Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</h1>
+<script>
+    let chieurong = prompt("Nhập chiều rộng :");
+    chieurong = parseFloat(chieurong)
+    let chieucao = prompt("Nhập chiều cao :");
+    chieucao = parseFloat(chieucao)
+    function sVsC(a,b) {
+        S = chieucao * chieurong;
+        C = (chieurong + chieucao) *2;
+        alert("Diện tích bằng :" + S + "\n" +
+              "Chu vi bằng : " +C  )
+    }
+    sVsC(chieurong,chieucao)
+</script>
+</body>
+</html>
