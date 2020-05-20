@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6023390-0bfc-466e-8b04-20cf2b445346" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../thuchanh/Funny circles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuchanh/xayDungLopDate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuchanh/xayDungLopHinhTron.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1cA1lPQSqlvf81qNaOgd8NKdLlu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6023390-0bfc-466e-8b04-20cf2b445346" name="Default Changelist" comment="" />
+      <created>1589956733372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589956733372</updated>
+      <workItem from="1589956735231" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="140" key="FileChooserDialogImpl" timestamp="1589956739818">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="432" y="140" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1589956739818" />
+  </component>
+</project>

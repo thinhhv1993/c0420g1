@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinhChuNhat</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    function Rectangle(dai,rong,) {
+        this.dai = dai;
+        this.rong = dai;
+        var SRectangle = dai * rong;
+        var CRectangle = (dai + rong) * 2;
+        // return SRectangle,CRectangle;
+        alert("Diện tích = " + SRectangle + " Chu Vi ="+ CRectangle);
+    }
+    function  createRectangle() {
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        var rectangle = new  Rectangle(500,100);
+        ctx.beginPath();
+        ctx.rect(100,50,rectangle.dai, rectangle.rong);
+        ctx.fill();
+    }
+    createRectangle()
+
+</script>
+</body>
+</html>
